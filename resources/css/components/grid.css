@@ -1,0 +1,25 @@
+.wrapper{
+    position: relative;
+    max-width: 1024px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+@media(min-width: 1054px){
+    .wrapper{
+        padding: 0;
+    }
+}
+
+.wrapper--small{
+    max-width: 84.5rem;
+    margin: auto;
+}
+
+.col-2{
+    flex: 0 0 calc(48% - var(--gap));
+}
+
+.col-3{
+    flex: 0 0 calc(33.333% - var(--gap));
+}

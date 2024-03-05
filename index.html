@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Satisfy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="/resources/css/style.css">
+
+    <title>Standards</title>
+</head>
+<body>
+    <main class="main">
+
+
+
+        <!--HEADER-->
+        <header class="header">
+
+            <div class="wrapper">
+
+                <div class="header__inner">
+
+                    <a href="#">
+
+                        <img src="/resources/images/svg/Logo.svg">
+                    
+                    </a>
+
+                    <div id="burger" class="burger" onclick="burgerToggle()">
+                        <span class="burger-line-top"></span>
+                        <span class="burger-line-center"></span>
+                        <span class="burger-line-bottom"></span>
+
+                    </div>
+
+                    <nav id="header-nav" class="header-nav">
+
+                        <ul class="header-list">
+
+                            <li class="header-item">
+
+                                <a href="#" class="link link--header">Termine</a>
+
+                            </li>
+
+                            <li class="header-item">
+
+                                <a href="#" class="link link--header">So Funktioniert's</a>
+
+                            </li>
+
+                            <li class="header-item">
+
+                                <a href="#" class="link link--header">Voting-Bereich</a>
+
+                            </li>
+
+                            <li class="header-item">
+
+                                <a href="#" class="link link--header">Gutscheine</a>
+
+                            </li>
+
+                            <li class="header-item">
+
+                                <a href="#" class="link link--header">FAQ</a>
+
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </header>
+        <!--HEADER END-->
+
+
+
+        <!--INTRO-->
+        <section class="intro">
+            <div class="wrapper">
+                <div class="intro-people">
+                    <img src="/resources/images/intro-people.png">
+                </div>
+                <div class="intro__inner">
+                    <div class="intro-title-container">
+
+                        <img class="intro-title-hearts" src="/resources/images/svg/Hearts Graphics.svg">
+                        <h1>Einfach Neue</h1>
+                        <h1>Leute kennenlernen</h1>
+
+                    </div>
+
+                    <ul class="intro-list">
+                        <li class="intro-item">
+                            <p>
+                                <i class="fa-solid fa-check"></i>Flirt, Spaß & Spannung
+                            </p>
+
+                        </li>
+
+                        <li class="intro-item">
+
+                            <p>
+                                <i class="fa-solid fa-check"></i>Tolle Locations
+                            </p>
+
+                        </li>
+
+                        <li class="intro-item">
+
+                            <p>
+                                <i class="fa-solid fa-check"></i>Einfache Anmeldung
+                            </p>
+
+                        </li>
+                    </ul>
+
+                    <form class="intro-form-group" method="GET">
+                        <button type="submit" class="button">Und so funktioniert's</button>
+
+                        <input id="hidden-input" name="stadt">
+
+                        <div class="custom-select">
+                            <div class="custom-select-arrow">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+
+                            <div class="custom-select-button">Wahle deine Stadt</div>
+                            
+                            <div class="custom-select-dropdown">
+                                <div class="custom-select-option" data-value="Ausburg">Ausburg</div>
+                                <div class="custom-select-option" data-value="Frankfurt">Frankfurt</div>
+                                <div class="custom-select-option" data-value="Heilbronn">Heilbronn</div>
+                                <div class="custom-select-option" data-value="Karlsruhe">Karlsruhe</div>
+                                <div class="custom-select-option" data-value="Stuttgart">Stuttgart</div>
+                                <!-- Add more options here -->
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="intro-clouds">
+
+                <img class="cloud" src="/resources/images/intro-clouds.png">
+
+            </div>
+
+        </section>
+        <!--INTRO END-->
+
+
+
+         <!--APPOINTMENTS-->
+        <section class="appointments">
+
+            <div class="wrapper">
+
+                <div class="appointments-hearts-left">
+
+                    <img src="/resources/images/table/hearts-table-left.png">
+
+                </div>
+
+                <div class="appointments-hearts-right">
+
+                    <img src="/resources/images/table/hearts-table-right.png">
+
+                </div>
+
+                <div class="appointments-hearts-bottom">
+
+                    <img src="/resources/images/table/hearts-table-bottom.png">
+
+                </div>
+
+                <div class="appointments-title-container">
+
+                    <h2>Termine</h2>
+
+                    <img class="appointments-title-hearts" src="/resources/images/table/hearts-table-title.png">
+
+                </div>
+
+
+                <select class="appointments-select" name="city">
+
+                    <option value="" disabled selected hidden>Wahle deine Stadt</option>
+
+                    <option value="Varna">Varna</option>
+
+                    <option value="Sofia">Sofia</option>
+
+                    <option value="Ruse">Ruse</option>
+
+                    <option value="Burgas">Burgas</option>
+
+                    <option value="Plovdiv">Plovdiv</option>
+
+                </select>
+
+                <div class="tables-wrapper">
+
+                    <!--TABLE-->
+                    <table class="table scheduled-events">
+
+                        <tr class="date">
+
+                            <th class="date-cell" colspan="5">Sonntag, 10. Juni 2018</th>
+
+                        </tr>
+
+                        <!--COLUMN NAMES-->
+                        <tr>
+
+                            <th class="table-alter-heading">Alter</th>
+
+                            <th class="table-stadt-heading">Stadt</th>
+
+                            <th class="table-beginn-heading">Beginn</th>
+
+                            <th class="table-status-heading">Status</th>
+
+                            <th class="table-preis-heading">Preis</th>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">20 bis 32 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">16:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">20 bis 32 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Augsburg</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">16:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">26 bis 38 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">17:30</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">26 bis 38 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Augsburg</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">17:30</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">34 bis 49 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">19:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">34 bis 49 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Augsburg</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">19:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--DATE-->
+                        <tr class="date">
+
+                            <th class="date-cell" colspan="5">Sonntag, 17. Juni 2018</th>
+
+                        </tr>
+
+                        <!--COLUMN NAMES-->
+                        <tr>
+
+                            <th class="table-alter-heading">Alter</th>
+
+                            <th class="table-stadt-heading">Stadt</th>
+
+                            <th class="table-beginn-heading">Beginn</th>
+
+                            <th class="table-status-heading">Status</th>
+
+                            <th class="table-preis-heading">Preis</th>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">20 bis 32 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">16:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">26 bis 38 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">17:30</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">34 bis 49 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">19:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">34 bis 49 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">19:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">34 bis 49 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">19:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">34 bis 49 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">19:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">34 bis 49 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">19:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">34 bis 49 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">19:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">34 bis 49 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">19:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">34 bis 49 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">19:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--ALTER-->
+                            <td class="table-alter">34 bis 49 Jahre</td>
+
+                            <!--STADT-->
+                            <td class="table-stadt">Stuttgart</td>
+
+                            <!--BEGINN-->
+                            <td class="table-beginn">19:00</td>
+
+                            <!--STATUS-->
+                            <td class="table-status">
+
+                                <img src="/resources/images/svg/man icon.svg">
+
+                                <img src="/resources/images/svg/girl icon.svg">
+
+                            </td>
+
+                            <!--PREIS-->
+                            <td class="table-preis">1, - €</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+                <!--TABLE-->
+                <div class="tables-wrapper">
+
+                    <table class="table table-legend">
+
+                        <!--DATE-->
+                        <tr class="table-title">
+
+                            <th class="title-cell" colspan="5">Legende</th>
+
+                        </tr>
+
+                        <!--COLUMN NAMES-->
+                        <tr>
+
+                            <th class="table-manner-heading">Manner</th>
+
+                            <th class="table-frauen-heading">Frauen</th>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--MANNER-->
+                            <td class="legende-cell-group"><img src="/resources/images/svg/man icon.svg">viele Platze fur Manner frei</td>
+
+                            <!--FRAUEN-->
+                            <td class="legende-cell-group"><img src="/resources/images/svg/girl icon.svg">viele Platze fur Frauen frei</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--MANNER-->
+                            <td class="legende-cell-group"><img src="/resources/images/svg/man-icon-yellow.svg">wenig Platze fur Manner frei</td>
+
+                            <!--FRAUEN-->
+                            <td class="legende-cell-group"><img src="/resources/images/svg/girl-icon-yellow.svg">wenig Platze fur Frauen frei</td>
+
+                        </tr>
+
+                        <!--ROW-->
+                        <tr>
+
+                            <!--MANNER-->
+                            <td class="legende-cell-group"><img src="/resources/images/svg/man-icon-red.svg">keine Platze fur Manner frei</td>
+
+                            <!--FRAUEN-->
+                            <td class="legende-cell-group"><img src="/resources/images/svg/girl-icon-red.svg">keine Platze fur Frauen frei</td>
+
+                        </tr>
+
+                    </table>
+                <!--TABLE END-->
+                </div>
+
+            </div>
+
+            <div class="appointments-clouds">
+
+                <img class="cloud" src="/resources/images/appointments-coulds.png">
+
+            </div>
+
+        </section>
+        <!--APPOINTMENTS END-->
+
+
+
+        <!--NEWS-->
+        <section class="news">
+            <div class="wrapper">
+                <div class="news-hearts-left">
+                    <img src="/resources/images/news/hearts-news-left.png">
+                </div>
+
+                <div class="news-hearts-right">
+                    <img src="/resources/images/news/heart-news-right.png">
+                </div>
+
+                <div class="news-title-container">
+                    <h2>News</h2>
+                    <img class="news-title-hearts" src="/resources/images/news/hearts-news-title.png">
+                </div>
+
+                <div class="news-scroll-container">
+
+                    <div class="news-scroll">
+
+                        <div class="news-article">
+
+                            <div class="news-image">
+
+                                <img src="/resources/images/news-1.png">
+
+                            </div>
+
+                            <div class="news-content">
+
+                                <h3 class="news-article-title">
+
+                                    Heading title goes here
+
+                                </h3>
+
+                                <p class="news-article-description">
+
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+                                </p>
+
+                            </div>
+
+                            <a href="#" class="button--secondary">Mehr</a>
+
+                        </div>
+
+                        <div class="news-article">
+
+                            <div class="news-image">
+
+                                <img src="/resources/images/news-2.png">
+
+                            </div>
+
+                            <div class="news-content">
+
+                                <h3 class="news-article-title">
+
+                                    Heading title goes here
+
+                                </h3>
+
+                                <p class="news-article-description">
+
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+                                </p>
+
+                            </div>
+
+                            <a href="#" class="button--secondary">Mehr</a>
+
+                        </div>
+
+                        <div class="news-article">
+
+                            <div class="news-image">
+
+                                <img src="/resources/images/news-3.png">
+
+                            </div>
+
+                            <div class="news-content">
+
+                                <h3 class="news-article-title">
+
+                                    Heading title goes here
+
+                                </h3>
+
+                                <p class="news-article-description">
+
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+                                </p>
+
+                            </div>
+
+                            <a href="#" class="button--secondary">Mehr</a>
+
+                        </div>
+
+                        <div class="news-article">
+
+                            <div class="news-image">
+
+                                <img src="/resources/images/news-1.png">
+
+                            </div>
+
+                            <div class="news-content">
+
+                                <h3 class="news-article-title">
+
+                                    Heading title goes here
+
+                                </h3>
+
+                                <p class="news-article-description">
+
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+                                </p>
+
+                            </div>
+
+                            <a href="#" class="button--secondary">Mehr</a>
+
+                        </div>
+
+                        <div class="news-article">
+
+                            <div class="news-image">
+
+                                <img src="/resources/images/news-2.png">
+
+                            </div>
+
+                            <div class="news-content">
+
+                                <h3 class="news-article-title">
+
+                                    Heading title goes here
+
+                                </h3>
+
+                                <p class="news-article-description">
+
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+                                </p>
+
+                            </div>
+
+                            <a href="#" class="button--secondary">Mehr</a>
+
+                        </div>
+
+                        <div class="news-article">
+
+                            <div class="news-image">
+
+                                <img src="/resources/images/news-3.png">
+
+                            </div>
+
+                            <div class="news-content">
+
+                                <h3 class="news-article-title">
+
+                                    Heading title goes here
+
+                                </h3>
+
+                                <p class="news-article-description">
+
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+                                </p>
+
+                            </div>
+
+                            <a href="#" class="button--secondary">Mehr</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!--NEWS END-->
+
+
+
+        <!--FEEDBACK-->
+        <section class="feedback">
+
+            <div class="wrapper">
+                <div class="feedback-butterflies-left">
+                    <img src="/resources/images/feedback/butterflies-feedback-left.png">
+                </div>
+
+                <div class="feedback-butterflies-right">
+                    <img src="/resources/images/feedback/butterflies-feedback-right.png">
+                </div>
+
+                <div class="feedback-hearts-bottom-left">
+                    <img src="/resources/images/feedback/heart-feedback-bottom-left.png">
+                </div>
+
+                <div class="feedback-hearts-bottom-right">
+                    <img src="/resources/images/feedback/hearts-feedback-bottom.png">
+                </div>
+
+                <div class="feedback-title-container">
+
+                    <h2>User Feedback</h2>
+
+                    <img class="feedback-title-hearts" src="/resources/images/feedback/heart-feedback-title.png">
+                    
+                </div>
+
+                <div class="feedback-swiper-container wrapper--small">
+
+                    <div class="swiper feedback-swiper">
+
+                        <!-- Additional required wrapper -->
+
+                        <div class="swiper-wrapper">
+
+                        <!-- Slides -->
+
+                            <div class="swiper-slide feedback-slide">
+
+                                <img src="/resources/images/user-feedback.png">
+
+                                <div class="feedback-text">
+
+                                    <p class="feedback-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+                                    <span class="username">John Doe</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide feedback-slide">
+
+                                <img src="/resources/images/user-feedback.png">
+
+                                <div class="feedback-text">
+
+                                    <p class="feedback-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+                                    <span class="username">John Doe</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide feedback-slide">
+
+                                <img src="/resources/images/user-feedback.png">
+
+                                <div class="feedback-text">
+
+                                    <p class="feedback-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+                                    <span class="username">John Doe</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide feedback-slide">
+
+                                <img src="/resources/images/user-feedback.png">
+
+                                <div class="feedback-text">
+
+                                    <p class="feedback-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+                                    <span class="username">John Doe</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    
+                        <!-- If we need navigation buttons -->
+                        
+                    
+                    </div>
+
+                    <div class="feedback-prev"><i class="fa-solid fa-chevron-left"></i></div>
+
+                    <div class="feedback-next"><i class="fa-solid fa-chevron-right"></i></div>
+
+                </div>
+
+            </div>
+
+            <div class="feedback-clouds">
+
+                <img class="cloud" src="/resources/images/feedback-clouds.png">
+
+            </div>
+
+        </section>
+        <!--FEEDBACK END-->
+
+
+
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer-hearts-left">
+                    <img src="/resources/images/footer/hearts-footer-left.png">
+                </div>
+
+                <div class="footer-hearts-right">
+                    <img src="/resources/images/footer/hearts-footer-right.png">
+                </div>
+
+                <div class="footer__inner">
+
+                    <ul class="footer-social-list">
+
+                        <li class="footer-social-item">
+
+                            <a href="#" class="link footer-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        </li>
+
+                        <li class="footer-social-item">
+
+                            <a href="#" class="link footer-social-link"><i class="fa-brands fa-twitter"></i></a>
+
+                        </li>
+
+                        <li class="footer-social-item">
+
+                            <a href="#" class="link footer-social-link"><i class="fa-brands fa-google-plus-g"></i></a>
+
+                        </li>
+
+                        <li class="footer-social-item">
+
+                            <a href="#" class="link footer-social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer__bottom">
+
+                    <ul class="footer-bottom-list">
+
+                        <li class="footer-bottom-item">
+
+                            <a href="#" class="link footer-bottom-link"><img src="/resources/images/svg/Logo.svg"></a>
+
+                        </li>
+
+                        <li class="footer-bottom-item">
+
+                            <a href="#" class="link footer-bottom-link">Termine</a>
+
+                        </li>
+
+                        <li class="footer-bottom-item">
+
+                            <a href="#" class="link footer-bottom-link">So funktioniert's</a>
+
+                        </li>
+
+                        <li class="footer-bottom-item">
+
+                            <a href="#" class="link footer-bottom-link">Voting-Bereich</a>
+
+                        </li>
+
+                        <li class="footer-bottom-item">
+
+                            <a href="#" class="link footer-bottom-link">Gutscheine</a>
+
+                        </li>
+
+                        <li class="footer-bottom-item">
+
+                            <a href="#" class="link footer-bottom-link">FAQ</a>
+
+                        </li>
+
+                        <li class="footer-bottom-item">
+
+                            <a href="#" class="link footer-bottom-link"><img src="/resources/images/svg/weitersagen.svg"></a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </footer>
+        <!--FOOTER END-->
+
+
+        
+    </main>
+
+    <script src="https://kit.fontawesome.com/104cd21b31.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/resources/js/swiper.js"></script>
+    <script src="/resources/js/custom-select.js"></script>
+    <script src="/resources/js/burgerToggle.js"></script>
+
+
+</body>
+</html>

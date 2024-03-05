@@ -1,0 +1,168 @@
+.feedback{
+    overflow-y: clip;
+    overflow-clip-margin: 2px;
+    background: var(--section-background-clr);
+    text-align: center;
+}
+
+.feedback .wrapper{
+    padding-bottom: 25%;
+    padding-top: 10rem;
+}
+
+@media(min-width: 768px){
+    .feedback .wrapper{
+        padding-top: 14rem;
+    }
+}
+
+.feedback-title-container{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 7rem;
+}
+
+@media(min-width: 768px){
+    .feedback-title-container{
+        margin-bottom: 13rem;
+    }
+}
+
+.feedback-title-hearts{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 140%;
+    max-width: unset;
+    z-index: 5;
+    transform: translate(-18%, -30%);
+    pointer-events: none;
+}
+
+.feedback-slide{
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.feedback-slide img{
+    width: 100%;
+    max-width: unset;
+    object-fit: cover;
+}
+
+.feedback-text{
+    position: relative;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: rgba(255 255 255 / 0.95);
+}
+
+@media(min-width: 768px){
+    .feedback-text{
+        position: absolute;
+        padding: 2.7rem 7rem;
+    }
+}
+
+.username{
+    font-size: 1.7rem;
+    color: var(--primary-text-clr);
+    font-weight: var(--bold);
+    text-align: center;
+}
+
+.feedback-swiper-container{
+    position: relative;
+}
+
+
+.feedback-prev,
+.feedback-next{
+    display: none;
+    position: absolute;
+    left: -9rem;
+    top: 50%;
+    z-index: 1000;
+    font-size: 3.5rem;
+    transform: translate(-100%, -50%);
+    cursor: pointer;
+    color: #fff;
+}
+
+.feedback-next{
+    right: -9rem;
+    left: unset;
+    transform: translate(100%, -50%);
+}
+
+@media(min-width: 1200px){
+    .feedback-prev,
+    .feedback-next{
+        display: block;
+    }
+}
+/*######################
+##### BUTTERFLIES #####
+######################*/
+.feedback-butterflies-left,
+.feedback-butterflies-right,
+.feedback-hearts-bottom-left,
+.feedback-hearts-bottom-right{
+    display: none;
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    z-index: 5;
+    transform:translate(-100%);
+}
+
+.feedback-butterflies-right{
+    left: unset;
+    top: 40%;
+    right: -25%;
+    transform: translate(100%);
+}
+
+.feedback-hearts-bottom-left{
+    bottom: 5%;
+    top: unset;
+    left: 12%;
+    transform:translate(0);
+}
+
+.feedback-hearts-bottom-right{
+    bottom: 20%;
+    top: unset;
+    left: unset;
+    right: 0;
+    transform:translate(0);
+}
+
+@media(min-width: 1400px){
+    .feedback-butterflies-left,
+    .feedback-butterflies-right,
+    .feedback-hearts-bottom-left,
+    .feedback-hearts-bottom-right{
+        display: block;
+    }
+}
+
+
+
+
+/*######################
+######## CLOUDS ########
+######################*/
+.feedback-clouds{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(35%);
+    z-index: 1;
+    pointer-events: none;
+}

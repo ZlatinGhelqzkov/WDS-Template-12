@@ -1,0 +1,253 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding-top: 3rem;
+}
+
+.header__inner{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+/*###########################
+######## BURGER MENU ########
+#############################*/
+
+.header-nav{
+    display: flex;
+    position: absolute;
+    right: -1px;
+    top: -3rem;
+    padding-top: 15rem;
+    width: 80svw;
+    height: 100svh;
+    background: var(--intro-gradient);
+    transform: translateX(100%);
+    transition: 0.2s ease-in-out;
+    z-index: 20;
+}
+
+.header-nav::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: #000;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+    transform: translateX(-300%);
+}
+
+.nav--opened{
+    transform: translateX(0%);
+}
+
+.nav--opened::after{
+    transform: translateX(calc(-100% + 1px)); 
+}
+
+.header-list{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4.5rem;
+}
+
+.burger {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.burger-line-top,
+.burger-line-center,
+.burger-line-bottom {
+    width: 3rem;
+    height: 0.5rem;
+    border-radius: 1.5rem;
+    background: #fff;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+}
+
+.burger-line-top,
+.burger-line-center {
+    margin-bottom: 5px;
+}
+
+.burger-line-center{
+    width: 2rem;
+}
+
+.burger-line-bottom{
+    width: 3rem;
+}
+
+.burger--clicked {
+    z-index: 1010;
+}
+
+.burger--clicked .burger-line-top
+{
+    animation-name: line-top;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.burger--clicked .burger-line-center{
+    animation-name: line-center;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.burger--clicked .burger-line-bottom{
+    animation-name: line-bottom;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line-top{
+    0%{
+        margin: 0px;
+    }
+    30%{
+        margin: 0px;
+        transform: translateY(150%);
+    }
+    100%{
+        margin: 0px;
+        transform: translateY(150%) rotate(45deg);
+    }
+}
+
+@keyframes line-center{
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes line-bottom{
+    0%{
+        margin: 0px;
+    }
+    30%{
+        margin: 0px;
+        transform: translateY(-150%);
+    }
+    100%{
+        margin: 0px;
+        transform: translateY(-150%) rotate(-45deg);
+    }
+}
+
+/*#########################
+######REVERSE ANIMATION####
+###########################*/
+
+.burger:not(.burger--clicked) .burger-line-top {
+    animation-name: line-top-reverse;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.burger:not(.burger--clicked) .burger-line-center {
+    animation-name: line-center-reverse;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.burger:not(.burger--clicked) .burger-line-bottom {
+    animation-name: line-bottom-reverse;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line-top-reverse {
+    0% {
+        transform: translateY(150%) rotate(45deg);
+    }
+
+    50%{
+        transform:  translateY(150%) rotate(0);
+    }
+    100% {
+        transform: translateY(0%) rotate(0);
+    }
+}
+
+@keyframes line-center-reverse {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes line-bottom-reverse {
+    0% {
+        transform: translateY(-150%) rotate(-45deg);
+    }
+
+    50%{
+        transform:  translateY(-150%) rotate(0);
+    }
+
+    100% {
+        transform: translateY(0%) rotate(0);
+    }
+}
+
+
+@media(min-width: 992px){
+    .header-nav{
+        display: block;
+        position: relative;
+        right: unset;
+        top: unset;
+        padding: 0;
+        transform: none;
+        height: auto;
+        width: auto;
+        background: none;
+    }
+
+    .header-nav::after{
+        content: none;
+    }
+
+    .header-list{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 4.5rem;
+    }
+
+    .burger{
+        display: none;
+    }
+}

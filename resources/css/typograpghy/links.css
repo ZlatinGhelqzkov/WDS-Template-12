@@ -1,0 +1,25 @@
+.link{
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: var(--poppins);
+    transition: 0.2s ease-in-out;
+}
+
+.link--header:hover{
+    color: var(--primary-text-clr);
+}
+
+.footer-social-link{
+    font-size: 3.6rem;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-bottom-link{
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.footer-social-link:hover,
+.footer-bottom-link:hover{
+    color: #cb2b5d;
+}

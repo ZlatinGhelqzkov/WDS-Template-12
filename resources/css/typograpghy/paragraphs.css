@@ -1,0 +1,20 @@
+.intro-item p{
+    font-size: 1.9rem;
+    color: #fff;
+    font-weight: var(--light);
+}
+
+.news-article-description{
+font-size: 1.4rem;
+line-height: 1.9rem;
+color: var(--secondary-text-clr);
+font-weight: var(--light);
+}
+
+.feedback-description{
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: var(--secondary-text-clr);
+    font-weight: var(--light);
+    text-align: center;
+}

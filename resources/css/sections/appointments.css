@@ -1,0 +1,227 @@
+.appointments{
+    background-color: #fff;
+    z-index: 2;
+    text-align: center;
+}
+
+.appointments .wrapper{
+    padding-bottom: 15%;
+}
+
+.appointments-select{
+    width: 100%;
+    padding: 0.8rem 2rem;
+    border: 3px solid var(--table-border-clr);
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    color: var(--primary-text-clr);
+    margin-bottom: 1rem;
+    font-weight: var(--medium);
+    filter: drop-shadow(0 0 25px rgba(0,0,0,0.15));
+}
+
+/*############################
+########### HEARTS ###########
+############################*/
+
+.appointments-title-container{
+    position: relative;
+    display: inline-block;
+}
+
+.appointments-title-hearts{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 130%;
+    transform: translate(-5%, -30%);
+    max-width: unset;
+    z-index: 5;
+    pointer-events: none;
+}
+
+@media(min-width: 768px){
+    .appointments-title-hearts{
+        width: auto;
+        transform: translate(-18%, -40%);
+    }
+}
+
+.appointments-hearts-left,
+.appointments-hearts-right{
+    display: none;
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translate(-100%, -100%);
+}
+
+@media(min-width: 1400px){
+    .appointments-hearts-left,
+.appointments-hearts-right{
+    display: block;
+}
+}
+
+.appointments-hearts-right{
+    left: unset;
+    right: -10%;
+    transform: translate(100%, -40%);
+}
+
+.appointments-hearts-bottom{
+    position: absolute;
+    display: none;
+    bottom: 12%;
+    right: 12%;
+    z-index: 1000;
+}
+
+@media(min-width: 1400px){
+    .appointments-hearts-bottom{
+        display: block;
+    }
+}
+
+
+
+/*############################
+##### SCHEDULED EVENTS ######
+############################*/
+
+.tables-wrapper{
+    border: 2px solid var(--table-border-clr);
+    border-radius: 1rem;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 64rem;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 25px rgba(0,0,0,0.15));
+}
+
+.tables-wrapper:last-of-type{
+    margin-bottom: 0;
+}
+
+.tables-wrapper::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #e5e5e5;
+}
+
+.tables-wrapper::-webkit-scrollbar-thumb{
+    background-color: #662c91;
+    border-radius: 4px;
+}
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    background: var(--table-background-clr);
+}
+
+.table th,
+.table td{
+    padding: 0.8rem 2rem;
+    background: var(--table-background-clr);
+    border: 1px solid var(--table-border-clr);
+}
+
+.date{
+    border-bottom: none;
+    overflow: hidden;
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+}
+
+.date-cell{
+    padding: 2rem !important;
+    width: 100%;
+    text-align: left;
+}
+
+.table th{
+    font-size: 1.7rem;
+    color: var(--primary-text-clr);
+    font-weight: var(--bold);
+}
+
+.table td{
+    font-size: 1.2rem;
+    opacity: 0.8;
+    color: var(--primary-text-clr);
+}
+
+.table-alter-heading,
+.table-stadt-heading {
+    text-align: left;
+  
+}
+
+.table-alter-heading{
+    width: 18%;
+}
+
+.table-stadt-heading {
+  width: 55%; /* This makes the Stadt heading larger */
+}
+
+.table-beginn-heading,
+.table-status-heading,
+.table-preis-heading{
+    max-width: 11.5rem;
+    text-align: center !important;
+}
+
+.table-alter,
+.table-stadt{
+    text-align: left;
+}
+
+.table-status img{
+    display: inline-block;
+}
+
+
+/*############################
+######### LEGEND #############
+############################*/
+
+.title-cell{
+    padding: 2rem !important;
+}
+
+.table-manner-heading,
+.table-frauen-heading {
+    text-align: left;
+}
+
+.title-cell{
+    text-align: left;
+}
+
+.legende-cell-group{
+    text-align: left;
+}
+
+.legende-cell-group img{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+
+/*########################
+####### CLOUDS ###########
+########################*/
+
+.appointments-clouds{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(41%);
+    z-index: 2;
+    pointer-events: none;
+}

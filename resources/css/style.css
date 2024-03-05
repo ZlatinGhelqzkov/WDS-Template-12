@@ -1,0 +1,74 @@
+/*##############################
+############ RESET #############
+##############################*/
+@import url(/resources/css/reset.css);
+
+
+
+/*##############################
+########## TYPOGRAPHY ##########
+##############################*/
+@import url(/resources/css/typograpghy/headings.css);
+@import url(/resources/css/typograpghy/links.css);
+@import url(/resources/css/typograpghy/paragraphs.css);
+
+
+
+/*##############################
+########## COMPONENTS ##########
+##############################*/
+@import url(/resources/css/components/grid.css);
+@import url(/resources/css/components/custom-select.css);
+@import url(/resources/css/components/button.css);
+@import url(/resources/css/components/clouds.css);
+
+
+
+/*##############################
+########## SECTIONS ##########
+##############################*/
+@import url(/resources/css/sections/header.css);
+@import url(/resources/css/sections/intro.css);
+@import url(/resources/css/sections/appointments.css);
+@import url(/resources/css/sections/news.css);
+@import url(/resources/css/sections/feedback.css);
+@import url(/resources/css/sections/footer.css);
+
+
+:root{
+
+     /*###################
+    ###### COLORS #######
+    ##################*/
+    --primary-text-clr: #662c91;
+    --secondary-text-clr: #9a6cbc;;
+    --intro-gradient: linear-gradient(0deg, #662c91 0%, #cb2b5d 100%);
+    --section-background-clr: #ddd4e8;
+    --table-border-clr: #ddd4e8;
+    --table-background-clr: #faf8fc;
+    --news-article-separator-clr: #ddd4e8;
+    --footer-background-clr: #712c8c;
+
+
+
+
+
+    /*###################
+    ### FONT FAMILIES ###
+    ##################*/
+    --poppins: 'Poppins', sans-serif;
+    --satisfy: 'Satisfy', cursive;
+
+
+
+    /*###################
+    ### FONT WEIGHTS ###
+    ##################*/
+    --extra-light: 200;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --black: 900;
+}
